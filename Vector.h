@@ -2,11 +2,12 @@
 // Created by rudri on 3/29/2019.
 //
 
-#ifndef MYVECTOR_MYVECTOR_H
-#define MYVECTOR_MYVECTOR_H
+#ifndef VECTOR_H_
+#define VECTOR_H_
 
+namespace UTEC{
 class vector {
-    int* _arr;
+    int* _arr = nullptr;
     int _size;
 
 public:
@@ -18,6 +19,6 @@ public:
     int get_item(int i);
     int size();
 };
+}
 
-
-#endif //MYVECTOR_MYVECTOR_H
+#endif		// VECTOR_H_

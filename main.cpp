@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
+// Se incluye el archivo "Vector.h", el
+// cual estaba ausente originalmente.
+#include "Vector.h"
 
 
 int main() {
@@ -37,7 +40,12 @@ int main() {
 
     // Agregando datos
     auto j = 0;
-    for (int i = 40; i < 20; ++i) {
+    // Se tuvo que cambiar "i = 40" por 
+    // "i = 0" para que las sentencias
+    // del "for loop" corran, y en
+    // consecuencia, los métodos 
+    // "insert".
+    for (int i = 0; i < 20; ++i) {
         vec1.insert(vec1.begin()+j, i);
         vec2.insert(j++, i);
     }
